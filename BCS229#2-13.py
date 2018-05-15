@@ -68,32 +68,8 @@ fig.suptitle('Posterior Distributions by Sample Size', fontsize=30)
 fig.text(0.5, 0.04, 'theta', ha='center', va='center', fontsize=20)
 fig.text(0.06, 0.5, 'P(theta)', ha='center', va='center', rotation='vertical', fontsize=20)
 plt.show()
-# fig.ylabel('P(P(Heads))')
-# axelegend(loc='best', frameon=False)
 
-
-
-	# for t in range(len(thetaVector)):
-	# 	posterior[n] += [(beta.pdf(thetaVector[t], 21, 11) * likelihoods[n][t])]
-	# s = sum(posterior[n])
-
-	# successes = sum(np.random.binomial(1, 0.5, n))
-
-
-# for i in range(len(graphTuple)):
-# 	alpha = simFairFlips(graphFlipCount[i])
-# 	thisGraph = graphTuple[i]
-# 	thisGraph.plot(thetaVector, beta.pdf(thetaVector, alpha, graphTuple-alpha), 'k-', lw=2, label=(str(graphFlipCount[i])+" Simulated flips"))
-# 	thisGraph.legend(loc='best', frameon=False)
-# plt.show()
-
-
-# dataVector = []
-# for i in range(len(thetaVector)):
-# 	dataVector += [random.randint(0, 101)]
-# y = dataVector
-
-
+# Alternative Layout
 # fig, axes = plt.subplots(1, 1)
 # alpha = simFairFlips(128)
 # axes.plot(thetaVector, beta.pdf(thetaVector, alpha, 128-alpha), 'k-', lw=2, label='128 Simulated flips')
